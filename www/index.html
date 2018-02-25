@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Pretty-Patch-FAQ</title>
+</head>
+<style>
+.main-center {
+  margin: auto;
+  width: 80%;
+}
+a {
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(219,87,5,1);
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 300;
+    font-size: 1.5em;
+    display: block;
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    margin: 100px auto;
+	width: 160px;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+a:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}
+</style>
+<script>
+	function handleClick() {
+		alert("Drag me to the Bookmarks Bar");
+		return false;
+	}
+</script>
+<body>
+<div class="main-center">
+	<div>
+		<a class="bookmark-link" onclick="handleClick(); return false;" href="javascript: void((function() {var element = document.createElement('script');element.charset = 'utf-8',element.setAttribute('src', 'http://127.0.0.1:3000/pretty.js');document.body.appendChild(element);})())"><span>Pretty-Patch</span></a>
+		<div style="text-align: center">Drag the button to the Bookmarks Bar</div>
+	</div>
+	<br/>
+	<hr/>
+	<div style="margin-top: 30px; text-align: center;">
+		<img src="demo.gif" alt="pretty steps">
+	</div>
+</div>
+</body>
+</html>
